@@ -36,8 +36,7 @@
   },
 
   "permissions": [
-    "tabs",
-    "storage"
+    "tabs"
   ],
 
   "host_permissions": [
