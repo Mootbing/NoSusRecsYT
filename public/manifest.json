@@ -1,13 +1,13 @@
 {
-  "name": "Time Manager",
+  "name": "MyTube",
   "version": "1.0.0",
-  "description": "A website screen-time management device to help you regain control of your time.",
+  "description": "Blocks recommended distractions & removes scrollable shorts",
   "manifest_version": 3,
   "author": "Mootbing",
 
   "action":{
     "default_popup": "index.html",
-    "default_title": "Time Manager",
+    "default_title": "MyTube",
     "default_icon": {
       "16": "images/16.png",
       "24": "images/24.png",
@@ -24,6 +24,10 @@
     }
   ],
 
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+
   "icons": {
     "16": "images/16.png",
     "24": "images/24.png",
@@ -32,6 +36,7 @@
   },
 
   "permissions": [
+    "tabs",
     "storage"
   ],
 
